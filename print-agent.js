@@ -30,6 +30,6 @@ const server = http.createServer((req, res) => {
     }
 });
 
-server.listen(3001, () => {
-    console.log('Print agent in ascolto sulla porta 3001');
+server.listen(3001, '0.0.0.0', () => {
+    console.log('Print agent in ascolto sulla porta 3001 su tutte le interfacce');
 });
